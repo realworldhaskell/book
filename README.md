@@ -24,7 +24,7 @@ It is clear that The Three wanted to bring this phenomenal langauge to
 mainstream industry in order to save themselves (and the rest of the world) from
 the toil of working with non-functional programming languages.
 
-The Haskell ecosystem has come a long way since this book was
-published, and moreover, the march of our beloved Haskellers towards
+The Haskell ecosystem has come a long way since this book was published,
+and moreover, the onward march of our beloved Haskellers towards
 programming-language-nirvana is relentless. All are welcome to help this book
 join the party!
