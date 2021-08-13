@@ -1,12 +1,2 @@
-dist
-cabal-dev
-*.o
-*.hi
-*.chi
-*.chs.h
-.hsenv
-.cabal-sandbox/
-cabal.sandbox.config
-cabal.config
-.stack-work
-stack.yaml.lock
+.stack-work/
+*~

@@ -1,0 +1,106 @@
+name:                realworldhaskell
+version:             0.0.1.1
+github:              "realworldhaskell/book"
+# license:             CC-BY-NC-SA-4.0
+license:             PublicDomain
+author:              "Bryan O'Sullivan, Don Stewart, John Goerzen"
+maintainer:          "realworldhaskell@aniketd.mailer.me"
+# copyright:           "2021 Author name here"
+
+extra-source-files:
+- README.md
+- CHANGELOG.md
+
+# Metadata used when publishing your package
+synopsis:            The Real World Haskell Book
+category:            Learning
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/realworldhaskell/book#readme>
+
+# Import all extensions that make up XGHC2021 explicit, until that becomes available TODO
+default-extensions:
+- BangPatterns
+- BinaryLiterals
+- ConstrainedClassMethods
+- ConstraintKinds
+- DeriveDataTypeable
+- DeriveFoldable
+- DeriveFunctor
+- DeriveGeneric
+- DeriveLift
+- DeriveTraversable
+- DoAndIfThenElse
+- EmptyCase
+- EmptyDataDecls
+- EmptyDataDeriving
+- ExistentialQuantification
+- ExplicitForAll
+# - FieldSelectors # Not working with this one enabled
+- FlexibleContexts
+- FlexibleInstances
+- ForeignFunctionInterface
+- GADTSyntax
+- GeneralisedNewtypeDeriving
+- HexFloatLiterals
+- ImplicitPrelude
+- ImportQualifiedPost
+- InstanceSigs
+- KindSignatures
+- MonomorphismRestriction
+- MultiParamTypeClasses
+- NamedFieldPuns
+- NamedWildCards
+- NumericUnderscores
+- PatternGuards
+- PolyKinds
+- PostfixOperators
+- RankNTypes
+- RelaxedPolyRec
+- ScopedTypeVariables
+- StandaloneDeriving
+- StandaloneKindSignatures
+- StarIsType
+- TraditionalRecordSyntax
+- TupleSections
+- TypeApplications
+- TypeOperators
+- TypeSynonymInstances
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+  when:
+    - condition: false
+      other-modules: Paths_realworldhaskell
+
+# executables:
+#   realworldhaskell-exe:
+#     main:                Main.hs
+#     source-dirs:         app
+#     ghc-options:
+#     - -threaded
+#     - -rtsopts
+#     - -with-rtsopts=-N
+#     dependencies:
+#     - realworldhaskell
+
+tests:
+  realworldhaskell-test:
+    when:
+      - condition: false
+        other-modules: Paths_realworldhaskell
+
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - realworldhaskell
+

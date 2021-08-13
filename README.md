@@ -27,4 +27,4 @@ the toil of working with non-functional programming languages.
 The Haskell ecosystem has come a long way since this book was published,
 and moreover, the onward march of our beloved Haskellers towards
 programming-language-nirvana is relentless. All are welcome to help this book
-join the party!
+keep up with the party!
